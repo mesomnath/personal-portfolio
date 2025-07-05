@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="./assets/vendor/css/bootstrap-utilities.min.css">
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="./uploads/img/somnath_sahu_favicon.ico" type="image/x-icon">
 </head>
 
 <body class="container-fluid p-0 m-0">
     <!-- Navbar Section -->
-    <nav class="navbar fixed-top navbar-expand-lg transparent">
+    <nav class="navbar fixed-top navbar-expand-lg transparent" id="main">
         <div class="container">
-            <a class="navbar-brand text-uppercase text-white" href="#">Somnath Sahu</a>
+            <a class="navbar-brand text-uppercase text-white align-items-center d-flex" href="#main"><span
+                    style="margin-right: 5px;"><svg width="36" height="36" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 40 L100 100 L40 160 Z" stroke="white" stroke-width="8" fill="none" />
+                        <path d="M160 40 L100 100 L160 160 Z" stroke="white" stroke-width="8" fill="none" />
+                    </svg>
+                </span>Somnath Sahu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -24,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="#">About</a>
+                        <a class="nav-link text-uppercase text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="#">What I Do</a>
+                        <a class="nav-link text-uppercase text-white" href="#passion">What I Do</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="#">Skills</a>
+                        <a class="nav-link text-uppercase text-white" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase text-white" href="#">Experience</a>
@@ -46,7 +53,7 @@
         </div>
     </nav>
     <!-- Header Section -->
-    <section class="header continer-fluid d-flex justify-content-center align-items-center">
+    <section class="header d-flex justify-content-center align-items-center">
         <div
             class="continer-fluid hero-section d-flex flex-column justify-content-center align-items-center text-center">
             <h1 class="text-uppercase animated fadeInDown delay-05s">Hi, I'm Somnath</h1>
@@ -55,11 +62,11 @@
         </div>
     </section>
     <!-- About Section  -->
-    <section class="about container-fluid d-flex justify-content-center align-items-center" id="about">
+    <section class="about container-fluid d-flex justify-content-center align-items-center bg-white" id="about">
         <div class="container text-center py-5">
             <h2 class="text-uppercase">About Me</h2>
             <img src="./uploads/img/aboutme.jpg" alt="Somnath Sahu"
-                class="img-fluid rounded-circle mb-4 border shadow-sm grayscale(100%)" style="width: 120px; height: 120px;">
+                class="img-fluid rounded-circle mb-4  shadow-sm grayscale(100%)" style="width: 120px; height: 120px;">
             <div class="lead-area">
                 <p class="lead">I am a passionate web designer and WordPress developer with a keen eye for detail and a
                     love for creating beautiful, functional websites. With years of experience in the industry, I have
@@ -72,9 +79,282 @@
                     MNC as a QA Software Engineer.</p>
             </div>
         </div>
-
     </section>
     <!-- What I Do  -->
+    <section class="passion d-flex justify-content-center align-items-center bg-light" id="passion">
+        <div class="container text-center py-5">
+            <h2 class="text-uppercase">What I Do</h2>
+            <div class="row">
+                <div class="col-md-4" data-category="web">
+                    <div class="card bg-white mb-4 shadow-sm border-0 p-4 rounded-sm">
+                        <div class="icon-section">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-laptop rounded-circle d-flex justify-content-center align-items-center mb-0 text-white p-4"
+                                    style="font-size: 32px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title small text-uppercase mb-3">Website Design</h4>
+                            <p class="card-text">
+                                I create visually stunning and user-friendly websites that not only look great but also
+                                provide an exceptional user experience. My design philosophy is centered around simplicity,
+                                functionality ensuring that every website I create is both beautiful and
+                                effective.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-category="wp">
+                    <div class="card bg-white mb-4 shadow-sm border-0 p-4 rounded-sm">
+                        <div class="icon-section">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-wordpress rounded-circle d-flex justify-content-center align-items-center mb-0 bg-info text-white p-4"
+                                    style="font-size: 32px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title small text-uppercase mb-3">WordPress Development</h4>
+                            <p class="card-text">
+                                I specialize in WordPress development, creating custom themes and plugins that enhance
+                                functionality and improve user engagement. My expertise in WordPress allows me to build
+                                robust, scalable websites that are easy to manage and update.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-category="qa">
+                    <div class="card bg-white mb-4 shadow-sm border-0 p-4 rounded-sm">
+                        <div class="icon-section">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <i class="bi bi-bug rounded-circle d-flex justify-content-center align-items-center mb-0 bg-info text-white p-4"
+                                    style="font-size: 32px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title small text-uppercase mb-3">QA/Softoware Testing</h4>
+                            <p class="card-text">
+                                As a Manual/Automation QA engineer, I ensure that every website I develop meets the highest standards of
+                                quality and performance. I conduct thorough testing to identify and resolve any issues,
+                                ensuring that the final product is flawless and ready for launch.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills-section d-flex justify-content-center align-items-center" id="skills">
+        <div class="container py-5">
+            <h2 class="text-uppercase text-white mb-5 text-center">My Skills</h2>
+            <div class="skills-tree-container">
+                
+                <!-- Frontend Development Branch -->
+                <div class="skill-category" data-category="frontend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="category-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-filetype-html"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-filetype-css"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-filetype-js"></i>
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-filetype-jsx"></i>
+                            <span>REACT</span>
+                        </div>
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-bootstrap"></i>
+                            <span>NEXT JS</span>
+                        </div>
+                        <div class="skill-tag" data-category="frontend">
+                            <i class="bi bi-palette"></i>
+                            <span>TAILWIND CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development Branch -->
+                <div class="skill-category" data-category="backend">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-server"></i>
+                        </div>
+                        <h3 class="category-title">Backend Development</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="backend">
+                            <i class="bi bi-filetype-js"></i>
+                            <span>NODE</span>
+                        </div>
+                        <div class="skill-tag" data-category="backend">
+                            <i class="bi bi-filetype-java"></i>
+                            <span>JAVA</span>
+                        </div>                        
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-py"></i>
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-tag" data-category="backend">
+                            <i class="bi bi-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-tag" data-category="backend">
+                            <i class="bi bi-database-gear"></i>
+                            <span>POSTGRES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WordPress Design Branch -->
+                <div class="skill-category" data-category="languages">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-wordpress"></i>
+                        </div>
+                        <h3 class="category-title">WordPress Design Tools</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-js"></i>
+                            <span>JQUERY</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-tsx"></i>
+                            <span>TYPESCRIPT</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-json"></i>
+                            <span>ELEMENTOR</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-filetype-json"></i>
+                            <span>DIVI</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-basket-fill"></i>
+                            <span>WOOCOMMERCE</span>
+                        </div>
+                        <div class="skill-tag" data-category="languages">
+                            <i class="bi bi-file-earmark-image"></i>
+                            <span>LMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing & QA Branch -->
+                <div class="skill-category" data-category="testing">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-bug"></i>
+                        </div>
+                        <h3 class="category-title">Testing & QA</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-window"></i>
+                            <span>CUCUMBER</span>
+                        </div>
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-check-circle"></i>
+                            <span>SELENIUM</span>
+                        </div>
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-speedometer2"></i>
+                            <span>BLACKBOX TESTING</span>
+                        </div>
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-globe"></i>
+                            <span>POSTMAN</span>
+                        </div>
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-diagram-3"></i>
+                            <span>TESTRIGOR</span>
+                        </div>
+                        <div class="skill-tag" data-category="testing">
+                            <i class="bi bi-diagram-2"></i>
+                            <span>TESTNG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools Branch -->
+                <div class="skill-category" data-category="devops">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h3 class="category-title">DevOps & Tools</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="devops">
+                            <i class="bi bi-git"></i>
+                            <span>GIT</span>
+                        </div>
+                        <div class="skill-tag" data-category="devops">
+                            <i class="bi bi-github"></i>
+                            <span>GITHUB</span>
+                        </div>
+                        <div class="skill-tag" data-category="devops">
+                            <i class="bi bi-terminal"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="skill-tag" data-category="devops">
+                            <i class="bi bi-wordpress"></i>
+                            <span>WORDPRESS</span>
+                        </div>
+                        <div class="skill-tag" data-category="devops">
+                            <i class="bi bi-hdd-network"></i>
+                            <span>VPS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design & UX Branch -->
+                <div class="skill-category" data-category="design">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="bi bi-palette2"></i>
+                        </div>
+                        <h3 class="category-title">Design & UX</h3>
+                    </div>
+                    <div class="skill-branches">
+                        <div class="skill-tag" data-category="design">
+                            <i class="bi bi-brush"></i>
+                            <span>UX/UI DESIGN</span>
+                        </div>
+                        <div class="skill-tag" data-category="design">
+                            <i class="bi bi-laptop"></i>
+                            <span>PRODUCT DESIGN</span>
+                        </div>
+                        <div class="skill-tag" data-category="design">
+                            <i class="bi bi-vector-pen"></i>
+                            <span>FIGMA</span>
+                        </div>
+                        <div class="skill-tag" data-category="design">
+                            <i class="bi bi-app"></i>
+                            <span>ADOBE XD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Skills    -->
     <!-- Experience -->
     <!-- Work I've Done -->
