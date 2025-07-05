@@ -10,6 +10,7 @@ p {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+
 /* Navbar Styles */
 .navbar {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -52,7 +53,15 @@ p {
     letter-spacing: 1px;
     font-size: 14px;
 }
-
+.navbar-nav .nav-item:hover {
+    background-color: rgba(195, 195, 195, 0.582);
+    color: #fff;
+}
+.navbar-nav .nav-item a.active{
+    border-bottom: 1px solid #fff !important; 
+    animation-delay: 0.4s;
+    animation: 0.2s ease-in-out fadeInUp;
+}
 .hero-section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.398), rgba(0, 0, 0, 0.822)), url('/uploads/img/hero.jpg');
     background-size: cover;
@@ -115,7 +124,6 @@ p {
  /* Passion section */
 .passion {
     padding: 60px 0;
-    height: 100vh;
 }
 .passion h2 {
     font-size: 36px;
@@ -440,4 +448,71 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+    transition: fadeInUp 0.3s ease;
+}
+.contact h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    transition: fadeInUp 0.3s ease-out;
+
+}
+.contact p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+    animation-delay: 0.5s;
+    transition: fadeInUp 0.6s ease-out;
+
+}
+
+.contact{
+    /* layout with center align and maximum with 420px */
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+}
+.contact a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #96959540;
+}
+
+.contact a:hover {
+    background-color: #151515;
+    transform: translateY(-5px);
+    color: #ffffff;
+    border: 1px solid #1c1c1c;
+}
+
+/* Footer Styles */
+.footer .social-link i{
+    color: #ffffff;
+    transition: fadeInUp 0.3s ease;
+}
+.footer p{
+    font-family: 'Lato', sans-serif;
+}
+
+.footer .social-link a:hover {
+    background: #ededed94 !important;
+    animation-delay: 0.5s;
+    transform: translate(0, -5px);
+    transition: fadeInUp 0.3s ease;
 }

@@ -15,7 +15,7 @@
 
 <body class="container-fluid p-0 m-0">
     <!-- Navbar Section -->
-    <nav class="navbar fixed-top navbar-expand-lg transparent" id="main">
+    <nav class="navbar fixed-top navbar-expand-lg transparent" id="navbar">
         <div class="container">
             <a class="navbar-brand text-uppercase text-white align-items-center d-flex" href="#main"><span
                     style="margin-right: 5px;"><svg width="36" height="36" viewBox="0 0 200 200"
@@ -46,13 +46,14 @@
                         <a class="nav-link text-uppercase text-white" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" href="#">Contact</a>
+                        <a class="nav-link text-uppercase text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Header Section -->
+    <div class="scrollspy-example" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+        <!-- Header Section -->
     <section class="header d-flex justify-content-center align-items-center">
         <div
             class="continer-fluid hero-section d-flex flex-column justify-content-center align-items-center text-center">
@@ -68,11 +69,11 @@
             <img src="./uploads/img/aboutme.jpg" alt="Somnath Sahu"
                 class="img-fluid rounded-circle mb-4  shadow-sm grayscale(100%)" style="width: 120px; height: 120px;">
             <div class="lead-area">
-                <p class="lead">I am a passionate web designer and WordPress developer with a keen eye for detail and a
+                <p class="lead">I am a passionate <strong>Web designer</strong> and <strong>WordPress developer</strong> with a keen eye for detail and a
                     love for creating beautiful, functional websites. With years of experience in the industry, I have
                     honed my skills in both design and development, allowing me to bring unique and innovative ideas to
                     life.</p>
-                <p class="lead">In addition to my design and development skills, I am also a dedicated QA engineer. I
+                <p class="lead">In addition to my design and development skills, I am also a dedicated <strong>QA engineer</strong>. I
                     believe that quality assurance is an essential part of the web development process, and I take pride
                     in ensuring that every project I work on meets the highest standards of quality and performance.</p>
                 <p class="lead">Currently I am working at <strong>Techmahindra LTD</strong>, one of the leading India's
@@ -97,7 +98,8 @@
                             <h4 class="card-title small text-uppercase mb-3">Website Design</h4>
                             <p class="card-text">
                                 I create visually stunning and user-friendly websites that not only look great but also
-                                provide an exceptional user experience. My design philosophy is centered around simplicity,
+                                provide an exceptional user experience. My design philosophy is centered around
+                                simplicity,
                                 functionality ensuring that every website I create is both beautiful and
                                 effective.
                             </p>
@@ -133,7 +135,8 @@
                         <div class="card-body">
                             <h4 class="card-title small text-uppercase mb-3">QA/Softoware Testing</h4>
                             <p class="card-text">
-                                As a Manual/Automation QA engineer, I ensure that every website I develop meets the highest standards of
+                                As a Manual/Automation QA engineer, I ensure that every website I develop meets the
+                                highest standards of
                                 quality and performance. I conduct thorough testing to identify and resolve any issues,
                                 ensuring that the final product is flawless and ready for launch.
                         </div>
@@ -147,7 +150,7 @@
         <div class="container py-5">
             <h2 class="text-uppercase text-white mb-5 text-center">My Skills</h2>
             <div class="skills-tree-container">
-                
+
                 <!-- Frontend Development Branch -->
                 <div class="skill-category" data-category="frontend">
                     <div class="category-header">
@@ -200,7 +203,7 @@
                         <div class="skill-tag" data-category="backend">
                             <i class="bi bi-filetype-java"></i>
                             <span>JAVA</span>
-                        </div>                        
+                        </div>
                         <div class="skill-tag" data-category="languages">
                             <i class="bi bi-filetype-py"></i>
                             <span>PYTHON</span>
@@ -359,7 +362,37 @@
     <!-- Experience -->
     <!-- Work I've Done -->
     <!-- Get in Touch -->
+    <section class="contact d-flex justify-content-center align-items-center bg-white" id="contact">
+        <div class="container text-center py-5">
+            <i class="bi bi-envelope-at" style="font-size: 36px;"></i>
+            <h2 class="text-uppercase mt-2">Connect with me</h2>
+            <p class="lead px-5 mb-4">
+                Feel free to reach out to me for any inquiries or collaborations. I am always open to new
+                opportunities and would love to hear from you!
+            </p>
+            <a href="mailto:ss@somnathsahu.com" class="py-2 px-4 text-decoration-none text-xxl-center mt-4 shadow-sm rounded" target="_blank">Say Hi 👋</a>
+        </div>
+    </section>
+    </div>
     <!-- Footer -->
+    <section class="footer d-flex justify-content-center align-items-center bg-black py-2 text-white">
+        <div class="container text-center py-3">
+            <p class="text-uppercase"> Follow Me 👇</p>
+            <div class="social-link d-flex justify-content-center mb-3">
+                <a href="#" class="p-2 m-1 shadow-sm border-dark-subtle text-white border" style="width:42px"
+                    target="_blank"> <i class="bi bi-facebook"></i></a>
+                <a href="#" class="p-2 m-1 shadow-sm border-dark-subtle text-white border" style="width:42px"
+                    target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="p-2 m-1 shadow-sm border-dark-subtle text-white border" style="width:42px"
+                    target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="p-2 m-1 shadow-sm border-dark-subtle text-white border" style="width:42px"
+                    target="_blank"><i class="bi bi-github"></i></a>
+                <a href="#" class="p-2 m-1 shadow-sm border-dark-subtle text-white border" style="width:42px"
+                    target="_blank"><i class="bi bi-instagram"></i></a>
+            </div>
+            <p class="text-white text-small mb-0">© 2025 Somnath Sahu.</p>
+        </div>
+    </section>
 </body>
 <!-- Scripts -->
 <script src="./assets/main.js"></script>
