@@ -10,6 +10,49 @@ p {
     font-family: 'Roboto Slab', sans-serif;
 }
 
+/* Navbar Styles */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.transparent {
+    background-color: transparent !important;
+}
+
+.navbar.scrolled {
+    background-color: #000 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar toggler icon styling for better visibility */
+.navbar-toggler {
+    border: none;
+    padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar.scrolled .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.navbar-nav .nav-item a {
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
 .hero-section{
     background-image: linear-gradient(rgba(0, 0, 0, 0.398), rgba(0, 0, 0, 0.822)), url('/uploads/img/hero.jpg');
     background-size: cover;
@@ -31,4 +74,37 @@ p {
     color: #FFF;
     font-size: 17px;
     font-weight: 300;
+}
+
+.header .indicator {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* About Section */
+.about {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+.about h2 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.about .lead-area{
+    /* layout with center align and maximum with 420px */
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+}
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0b0b0b;
 }
